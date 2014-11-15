@@ -1,0 +1,482 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: #fff;
+    color: #666;
+    font-family: Arial, sans-serif;
+	font-size: 10pt;
+}
+
+a{
+	color: #0077dd;
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+pre{
+    background: url('../img/pre_bg.gif') repeat;
+    border: 1px solid silver;
+    margin-left: 10px;
+    margin-right: 20px;
+    overflow:auto;
+    overflow-y:hidden; /* Специально для IE - чтобы не было вертикальной прокрутки */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reg{
+    color: #c1901a;
+    font-style: italic;
+}
+
+.author{
+    
+    clear: both;
+    padding: 10px 0px 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #66665E;
+    text-align: right;
+}
+
+/* Outer */
+#outer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header */
+#header{
+    background: #004778 url('../img/a5.gif') bottom left repeat-x;
+    height: 10em;
+    padding-left: 2em;
+	position: relative;
+}
+
+#header h1
+{
+	position: absolute;
+	top: 1.8em;
+	font-size: 2.2em;
+	letter-spacing: -0.05em;
+}
+
+#header h1 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#header h2
+{
+    
+	position: absolute;
+	font-size: 11px;
+	top: 7.7em;
+	color: #E0E8EF;
+    
+}
+
+/* Menu */
+
+#menu
+{
+	position: absolute;
+	top: 5em;
+	right: 3em;
+}
+
+#menu ul
+{
+	list-style: none;
+}
+
+#menu li
+{
+	display: inline;
+	padding-left: 1.1em;
+	margin-left: 1em;
+	border-left: dotted 1px #E0E8EF;
+}
+
+#menu li.first
+{
+	border: 0em;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+#menu li a
+{
+	color: #fff;
+	padding: 0.1em;
+	text-decoration: none;
+}
+
+#menu li a:hover
+{
+	text-decoration: underline;
+}
+
+/* Content */
+
+#content
+{
+	line-height: 1.5em;
+}
+
+
+#content p
+{
+	margin-bottom: 1.5em;
+}
+
+#content h2,h3,h4,h5,h6
+{
+	color: #545454;
+	margin-bottom: 1em;
+	border-bottom: dashed 1px #dfdfdf;
+	padding-bottom: 0.3em;
+}
+
+#content h2
+{
+	font-size: 1.5em;
+}
+
+#content h3
+{
+	font-size: 1.1em;
+    
+}
+
+#content h3 a
+{
+    color: #545454;
+	text-decoration: none;
+}
+
+
+
+#content ul
+{
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+	list-style: square;
+}
+
+#content blockquote
+{
+	margin-bottom: 1.5em;
+	padding: 0.75em 0.75em 0.75em 1.5em;
+	border-left: solid 0.75em #005082;
+	background: #FDFDFD url('../img/a7.gif') top left repeat-x;
+}
+
+#content blockquote p
+{
+	margin-bottom: 0em;
+}
+
+#content table
+{
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#content table th
+{
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+#content table td
+{
+	padding: 0.5em;
+	border-right: solid 1px #fff;
+}
+
+#content table tr.rowH
+{
+	color: #fff;
+	background: #006192 url('../img/a8.gif') top left repeat-x;
+	border-right: solid 1px #fff;
+}
+
+#content table tr.rowA
+{
+	background: #F8F8F8 url('../img/a6.gif') top left repeat-x;
+	border-top: solid 1px #fff;
+	color: inherit;
+}
+
+#content table tr.rowB
+{
+	background: #FDFDFD url('../img/a7.gif') top left repeat-x;
+	border-top: solid 1px #fff;
+	color: inherit;
+}
+
+#content table tr.rowC
+{
+    background: #f8f8f8;
+    margin-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #545454;
+    text-align: center;
+    float: left;
+    
+}
+
+#content table tr.rowD
+{
+    margin-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #545454;
+    text-align: center;
+    float: left;
+    
+}
+
+/* Primary Content */
+
+#primaryContentContainer
+{
+	background-color: #fff;
+	float: right;
+	margin: 0em -19em 0em -19em;
+	width: 100%;
+}
+
+#primaryContent
+{
+    text-align: justify;
+	margin: 1.5em 19em 0em 17.25em;
+	padding: 1.5em 3em 1.5em 3em;
+}
+
+#breadcrumbs_list
+{
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+#primaryContent ol
+{
+	margin-left: 40px;
+    
+}
+
+/* Secondary Content */
+
+#secondaryContent
+{
+	position: relative;
+	float: left;
+	width: 14em;
+	padding: 3em 2em 1.5em 2em;
+	background: #fff url('../img/a1.gif') top right repeat-y;
+}
+
+#secondaryContent .xbg
+{
+	position: absolute;
+	right: 0em;
+	bottom: -64px;
+	background: #fff url('../img/a3.gif') top right no-repeat;
+	height: 64px;
+	width: 128px;
+}
+
+
+/* Tertiary Content */
+
+#tertiaryContent
+{
+	position: relative;
+	float: right;
+	width: 15em;
+	padding: 3em 2em 1.5em 2em;
+	background: #fff url('../img/a2.gif') top left repeat-y;
+}
+
+#tertiaryContent .xbg
+{
+	position: absolute;
+	left: 0em;
+	bottom: -64px;
+	background: #fff url('../img/a4.gif') top left no-repeat;
+	height: 64px;
+	width: 128px;
+}
+
+/* Footer */
+
+#footer
+{
+	position: relative;
+	z-index: 1;
+	border-top: dashed 1px #dfdfdf;
+	padding: 1em 0em 2em 0em;
+	margin: 1em 2em 0em 2em;
+	text-align: center;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.meta {
+	padding: 5px 30px 15px 18px;
+    background: url('../img/img08.jpg') no-repeat left 10px;
+    border-bottom: 1px #3f8aba solid;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #66665E;
+}
+
+/* Посторінкова навігація */
+#pagination {
+   margin-left: 300px;
+}
+
+#error{
+    color: #fb0808;
+}
+
+.calendara{
+     color: #fb0808;
+    
+}
+
+/* Поле пошуку */
+#search_text{
+    background: url('../img/icon_search.jpg') no-repeat 1px #ffffff;
+    border: 1px solid #aed5fc;
+    color: #666666;
+    font: normal 12px Arial, Helvetica, sans-serif; 
+    padding:3px 0px 3px 20px;
+    width: 15em;
+}
+
+/* Кнопка пошуку */
+#search_button{
+    background: url('../img/button_search.jpg');
+    border: 0;
+    height: 23px;
+    width: 60px;
+}
+
+#comment_button{
+    background: url('../img/button_comment.jpg');
+    border: 0;
+    height: 23px;
+    width: 90px;
+}
+
+/* Для виводу повідомлень */
+#not_error{
+    color: #3aa628;
+}
+
+/* Для виводу помилок валідації */
+#error{
+    color: #fb0808;
+}
+
+/* Голосування */
+#questions_vote{
+	text-align: center;
+}
+
+/* Шкала кількості проголосованих */
+.bar{
+    background: #005985;
+    height:10px;
+    margin-bottom: 10px;
+}
+
+/*Поле форми*/
+#form_text{
+    background: #ffffff;
+    border: 1px solid #aed5fc;
+    color: #666666;
+    font: normal 12px Arial, Helvetica, sans-serif; 
+    padding:3px 0px 3px 0px;
+    width: 420px;
+}
+
+#form_char{
+    background: #ffffff;
+    border: 1px solid #aed5fc;
+    color: #666666;
+    font: normal 12px Arial, Helvetica, sans-serif; 
+    padding:3px 0px 3px 0px;
+    width: 120px;
+}
+
+/* Кнопка пошуку */
+#search_button{
+    background: url('../img/button_search.jpg');
+    border: 0;
+    height: 23px;
+    width: 60px;
+}
+
+/* Кнопка відправлення */
+#send_button{
+    background: url('../img/button_send.jpg');
+    border: 0;
+    height: 23px;
+    width: 90px;
+}
+
+/* Кнопка для голосування */
+#vote_button{
+    background: url('../img/button_poll.jpg');
+    border: 0;
+    height: 23px;
+    width: 90px;
+}
+
+/* Кнопка для результатів голосування */
+#result_button{
+    background: url('../img/button_vote.jpg');
+    border: 0;
+    height: 23px;
+    width: 90px;
+}
+
+div#content div.comment{
+    background: #f8f8f8;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    border: 1px solid #E2DEE4;   
+}
+
+div#content p.comment{
+    color: #4D4D4D;
+    font-size: 11px;        
+}
+
+/* Таблица смайлов */
+#smile table tr td{
+    padding-left:4px;
+    padding-right:4px;
+}
